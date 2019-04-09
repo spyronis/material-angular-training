@@ -1,0 +1,13 @@
+<div class="news-list">
+    <ul *ngFor="let newIt of newsItems">
+      <li>
+        <a routerLink='/news/{{newIt.id}}' href='#'>{{newIt.title}}</a>
+        <br>
+        {{newIt.description}}
+        <br>
+        <b>Author:</b> {{newIt.author.id}} - {{newIt.author.name}}
+        <br>
+        <b>Category</b>: {{newIt.category.id}} - {{newIt.category.name}}
+      </li>
+    </ul>
+</div>

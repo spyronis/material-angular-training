@@ -1,0 +1,17 @@
+<h1>FORM</h1>
+<form [formGroup]="editNewsForm" (submit)="submitEditedValues()">
+  
+  <div class="formBasic">
+    <label>Title</label>
+    <input type="text" formControlName="title" value={{newsItem.title}}/>
+    <br>
+    
+    <label>Description</label>
+    <textarea rows="4" cols="50" formControlName="description" value={{newsItem.description}}></textarea>
+    <br>
+    
+  </div>
+
+  <button type="submit">Submit</button>
+  
+</form>
